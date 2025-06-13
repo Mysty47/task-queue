@@ -1,0 +1,10 @@
+Connected to producer at 127.0.0.1:12345
+[Consumer] 100000 tasks | 59418 tasks/sec | 0.017 ms/task
+[Consumer] 200000 tasks | 38971 tasks/sec | 0.026 ms/task
+[Consumer] 300000 tasks | 33245 tasks/sec | 0.030 ms/task
+[Consumer] 400000 tasks | 33467 tasks/sec | 0.030 ms/task
+[Consumer] 500000 tasks | 33091 tasks/sec | 0.030 ms/task
+[Consumer] 600000 tasks | 32884 tasks/sec | 0.030 ms/task
+[Consumer] 700000 tasks | 32916 tasks/sec | 0.030 ms/task
+[Consumer] 800000 tasks | 34329 tasks/sec | 0.029 ms/task
+[Consumer] 900000 tasks | 32573 tasks/sec | 0.031 ms/task
