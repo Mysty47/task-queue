@@ -1,12 +1,12 @@
 === PRODUCER STARTED ON PORT 12345 ===
 New consumer connected. Total clients: 2
-43860 tasks/sec, 0.02280 ms/task (min: 0.01610 ms/task)
-30488 tasks/sec, 0.03280 ms/task (min: 0.01610 ms/task)
-33003 tasks/sec, 0.03030 ms/task (min: 0.01610 ms/task)
-33445 tasks/sec, 0.02990 ms/task (min: 0.01610 ms/task)
-33333 tasks/sec, 0.03000 ms/task (min: 0.01610 ms/task)
-33898 tasks/sec, 0.02950 ms/task (min: 0.01610 ms/task)
-33445 tasks/sec, 0.02990 ms/task (min: 0.01610 ms/task)
-33670 tasks/sec, 0.02970 ms/task (min: 0.01610 ms/task)
-33557 tasks/sec, 0.02980 ms/task (min: 0.01610 ms/task)
-
+54645 tasks/sec, 0.01830 ms/task (min: 0.01610 ms/task)
+59524 tasks/sec, 0.01680 ms/task (min: 0.01610 ms/task)
+59172 tasks/sec, 0.01690 ms/task (min: 0.01610 ms/task)
+58140 tasks/sec, 0.01720 ms/task (min: 0.01610 ms/task)
+57471 tasks/sec, 0.01740 ms/task (min: 0.01610 ms/task)
+58824 tasks/sec, 0.01700 ms/task (min: 0.01610 ms/task)
+62112 tasks/sec, 0.01610 ms/task (min: 0.01610 ms/task)
+57471 tasks/sec, 0.01740 ms/task (min: 0.01610 ms/task)
+59880 tasks/sec, 0.01670 ms/task (min: 0.01610 ms/task)
+60606 tasks/sec, 0.01650 ms/task (min: 0.01610 ms/task)

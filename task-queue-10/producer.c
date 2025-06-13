@@ -13,17 +13,6 @@
 SOCKET clients[MAX_CLIENTS];
 int client_count = 0;
 
-void send_task_to_all_clients(int task) {
-    for (int i = 0; i < client_count; ++i) {
-        int result = send(clients[i], (char*)&task, sizeof(int), 0);
-        if (result == SOCKET_ERROR) {
-            closesocket(clients[i]);
-            clients[i] = clients[--client_count];
-            --i;
-        }
-    }
-}
-
 int main() {
     WSADATA wsaData;
     SOCKET server_fd, new_socket;
@@ -62,6 +51,7 @@ int main() {
 
     int task = 0;
     int sent = 0;
+    int current_client = 0;
     clock_t start = clock();
     double min_time = 999999;
 
@@ -81,8 +71,19 @@ int main() {
         }
 
         if (client_count > 0) {
-            send_task_to_all_clients(task++);
+            int result = send(clients[current_client], (char*)&task, sizeof(int), 0);
+            if (result == SOCKET_ERROR) {
+                closesocket(clients[current_client]);
+                clients[current_client] = clients[--client_count];
+                if (client_count == 0) continue;
+                current_client %= client_count;
+                continue;
+            }
+
+            task++;
             sent++;
+
+            current_client = (current_client + 1) % client_count;
         }
 
         if (sent % 10000 == 0 && sent > 0) {
